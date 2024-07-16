@@ -1,19 +1,24 @@
+/*Para o resetar e aplicar o estilo aqui no box sizing  teho que usar o before e o after*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*Zerando margins e font do projeto*/
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 
+  /*Webkit ou motor do browser Venderprefix, arrumar a fonte para ficar mais suave, mais fina e mais interessante*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*Inicializando as variaveis*/
 :root {
+  /*Cor de fundo*/
   --bg-color: #09090B;
   --surface-color: #18181B;
   --stroke-color: #27272A;
@@ -22,13 +27,16 @@
   --brand-color-primary: #F7B733;
   --brand-color-secondary: #FC4A1A;
 
+  /*Font Famyli -  Vamos usar a Inter, caso nao tenha system-ui e ultima opção a sans-serif */
   --ff-sans: 'Inter', system-ui, sans-serif;
 
+  /*FOnt weight*/
   --fw-base: 400;
   --fw-md: 500;
   --fw-bold: 800;
 
-  --fs-sm: 0.875rem;
+  /*Font size*/
+  --fs-sm: 0.875rem;/* rem Olha sempre para base de fonte do navegador que é 16px*/
   --fs-base: 1rem;
   --fs-lg: 1.25rem;
   --fs-xl: 1.5rem;
@@ -77,6 +85,7 @@ h3 {
   font-size: var(--fs-lg);
 }
 
+/*resetar o a Todo a que aparecer vou tirar a cor e herdar a cor do pai*/
 a {
   text-decoration: none;
   color: inherit;
@@ -94,6 +103,7 @@ a:hover {
   color: transparent;
 }
 
+/*resetar a ul defino como uma lista role="list" e vou tirar list-style, se não fizer isso alguns navegadores não entendem a lista ul*/
 ul[role="list"] {
   list-style: none;
 }
@@ -103,11 +113,14 @@ img {
   display: inline-block;
 }
 
+/*Quando a tela for desktop vou mudar o tamanho da font*/
+/*80em => 80*16 = 1280px*/
+/*Assim o site já estara responsivo para uma tela de celular e desktop*/
 @media (width >= 80em) {
   :root {
-    --fs-lg: 2rem;
-    --fs-xl: 3rem;
-    --fs-2xl: 4rem;
+    --fs-lg: 2rem;  /*32/16*/
+    --fs-xl: 3rem;  /*48/16*/
+    --fs-2xl: 4rem; /*64/16*/
 
     --py-base: 1.5rem;
     --py-lg: 2.5rem;
