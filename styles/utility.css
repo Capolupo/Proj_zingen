@@ -1,3 +1,6 @@
+/*Classes utilitarias*/
+/*Espaços padroes*/
+
 .py-base {
   padding-block: var(--py-base);
 }
@@ -14,10 +17,15 @@
   padding-inline: var(--px-lg);
 }
 
+
 .container {
-  --max-width: 375px;
+  --max-width: 375px;/*olho primeiro para o tamanho do mobile*/
+  /*As margins vao ficar auto*/
   margin-inline: auto;
-  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+
+  /*O css vai escolher entre o menor tamanho entre os dois, uma ou outra opção*/
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);/*Aquina segunda opção estou subtraindo os espaços laterais*/
+  /*dos 100% da tela subtraio px-lg * 2 .. 100% - var(--px-lg) * 2      */
 }
 
 .desktop-only {
@@ -49,6 +57,7 @@
   display: grid;
 }
 
+/*Nas telas pequenas (width >= 80em) => --max-width: 80em; */
 @media (width >= 80em) {
   .container {
     --max-width: 80em;
