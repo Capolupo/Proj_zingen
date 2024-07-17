@@ -1,6 +1,6 @@
 #hero {
   text-align: center;
-
+  /*este seletor src*="music-bars" ira pegar a img que recebe o nome de music-bars e redminssionar *= serve para procurar o nome ou parte do nome  */
   & img[src*="music-bars"] {
     width: 12.875rem;
   }
@@ -21,9 +21,13 @@
   }
 }
 
+/*Como redimensionei a imagem ali em cima para mobile para desktop tenho que lembrar de redimensionar aqui tambem*/
 @media (width >= 80em) {
   #hero {
+    /*Definindo a imagem do bg para não repetid; center; contein*/
     background: url(../assets/images/bg-hero-desktop.svg) no-repeat bottom center/contain;
+
+    /*Força um padding maiorzão*/
     padding-bottom: 15rem;
 
     & img[src*="music-bars"] {
