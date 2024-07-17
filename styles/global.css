@@ -123,6 +123,7 @@ img {
     --fs-xl: 3rem;  /*48/16*/
     --fs-2xl: 4rem; /*64/16*/
 
+    /*py eixo y na VERTICAL espaços em cima e em baixo*/
     --py-base: 1.5rem;
     --py-lg: 2.5rem;
     --py-xl: 5rem;
