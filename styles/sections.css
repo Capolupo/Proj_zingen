@@ -3,6 +3,7 @@
   background: url(../assets/images/illustration.svg) top/cover;
 }
 
+/*Definindo os header; h2; p das <sections>*/
 section {
   & header {
     & strong {
