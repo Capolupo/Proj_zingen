@@ -52,8 +52,9 @@
   font-size: 1.125rem;
 }
 
+/*Estrategia para deixar o texto do botao degrade*/
 .btn[aria-label] {
-  --btn-inset: 0.09375rem;
+  --btn-inset: 0.09375rem;/*1.5/16 = 0.09375*/
 
   position: relative;
 
@@ -69,6 +70,7 @@
     content: attr(aria-label);
     background: var(--btn-bg-color);
     -webkit-background-clip: text;
+    /*para somente o etxto ficar degrade, recorta somente o texto para aplicar a cor*/
     background-clip: text;
     color: transparent;
     z-index: 1;
