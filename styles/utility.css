@@ -57,6 +57,8 @@
   gap: 1rem;
 }
 
+
+/*Não posso usar ponto no nome da classe, para usar como abaixo uso a \ que o css vai entender o ponto como texto ao chamar a classe vou chamar normal gap-1.5 */
 .gap-1\.5 {
   gap: 1.5rem;
 }

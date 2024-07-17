@@ -1,4 +1,5 @@
 header {
+  /*no header vou pegar o primeiro a deixar a margim a direita auto, ouseja ira jogar tudo para a direita os demais itens do menu*/
   & a:first-child {
     margin-right: auto;
   }

@@ -77,6 +77,7 @@
   }
 }
 
+/*Essa configuração abaixo é para dar uma pequena aumentada no botão quando a tela for desktop*/
 @media (width >= 80em) {
   .btn-sm {
     padding: .75rem 1.5rem;
