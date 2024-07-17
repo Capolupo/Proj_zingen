@@ -92,6 +92,7 @@ a {
   color: inherit;
 }
 
+/*fazer o degrade de a quando passar o maouse em cima*/
 a:hover {
   background: linear-gradient(
     90deg,
@@ -101,6 +102,7 @@ a:hover {
 
   -webkit-background-clip: text;
   background-clip: text;
+  /*Tiro a cor do texto para aparecer o degrade*/
   color: transparent;
 }
 

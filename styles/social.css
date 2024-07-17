@@ -1,3 +1,4 @@
+/*Define o degrade dos icones social*/
 a.social {
   --bg-img: "";
   background-image: var(--bg-img);
