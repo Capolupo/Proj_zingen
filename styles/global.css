@@ -64,6 +64,7 @@ html {
 
 body {
   background-color: var(--bg-color);
+  /*para não ter rolagem horizontal*/
   overflow-x: hidden;
 }
 
