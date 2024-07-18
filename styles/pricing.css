@@ -55,7 +55,7 @@
 
   & .premium {
     position: relative;
-
+    /*Dentro de primiu o spam que aparece no topo esta dentro de card por isso a identação abaixo*/
     & .card {
       padding-top: 4.25rem;
 
@@ -97,15 +97,19 @@
       margin-inline: auto;
     }
 
+    /*para deixar este card maior*/
     & .premium .card {
       padding-bottom: 6rem;
     }
 
+    /*reajustando o tamanho do botao
+    a cascata do css nas importações aqui esta mais abaixo por isso o btn-md la em cima tem um tamanho e aqui consigo mudar*/
     .btn-md {
       padding: .75rem 1.5rem;
       font-size: var(--fs-base);
     }
 
+    /*busquei o separator para reposicionar ele e tentar alinhar os botoes*/
     & .card:nth-child(3) .separator {
       margin-block: 1.5rem;
     }
