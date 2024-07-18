@@ -33,6 +33,7 @@
     width: 100%;
   }
 
+  /*A linha que separa as infos dos cards com efeito gradient*/
   & .separator {
     height: 1px;
     margin-block: 2rem;
@@ -90,7 +91,7 @@
 
   @media (width >= 80em) {
     --fs-price: 2.5rem;
-
+    /*se for desktop ajusto assim o header do card*/
     & header {
       max-width: 50rem;
       margin-inline: auto;

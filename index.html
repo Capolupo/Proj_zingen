@@ -119,9 +119,14 @@
         <div class="card py-lg px-lg">
           <h3>Básico</h3>
           <p>Baixe o app e comece a cantar agora mesmo!</p>
+
+          <!--No html podemo criar nossas tag, a boa pratica é criar com parte do nome do projeto e "-" nome da tag
+          Obs* criei essa tag só para seguir a semantica do html, como no titulo aqui ja estava usando o h3 e precisava de uma fonte maior optamos por essa estrategia -->
           <zin-pricing>Grátis</zin-pricing>
           <a href="#download" class="btn btn-md" aria-label="Baixar agora"></a>
           <div class="separator"></div>
+          
+          <!-- role="list" pois não queremos os bullet points-->
           <ul role="list" class="grid gap-1">
             <li>Com anúncios</li>
             <li>Até 5 músicas por dia</li>
